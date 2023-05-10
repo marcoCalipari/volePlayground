@@ -1,0 +1,5 @@
+------- VOLE BENCHMARKING -------
+Paillier VOLE average time: 0.053259 seconds
+OT VOLE average time: 0.002224 seconds
+Iterations reached limit: 0
+Iterations failed: 0

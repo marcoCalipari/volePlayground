@@ -1,0 +1,253 @@
+Profiling Single Operation VOLE...
+Average time for Single Operation VOLE: 0.050755 seconds
+         916421 function calls in 0.510 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <timeit-src>:2(<module>)
+        1    0.000    0.000    0.075    0.075 <timeit-src>:2(inner)
+       20    0.000    0.000    0.000    0.000 Profiling.py:13(setup)
+       10    0.000    0.000    0.508    0.051 Profiling.py:21(single_operation_VOLE)
+       10    0.000    0.000    0.507    0.051 VOLE_Paillier.py:5(compute_vole_HE)
+       20    0.000    0.000    0.000    0.000 classes.py:135(__init__)
+       20    0.000    0.000    0.000    0.000 classes.py:157(__init__)
+       10    0.000    0.000    0.000    0.000 paillier.py:22(modpow)
+       10    0.000    0.000    0.001    0.000 paillier.py:37(__init__)
+       10    0.001    0.000    0.001    0.000 paillier.py:4(invmod)
+       10    0.000    0.000    0.000    0.000 paillier.py:50(__init__)
+       10    0.000    0.000    0.092    0.009 paillier.py:58(generate_keypair)
+       20    0.000    0.000    0.415    0.021 paillier.py:64(encrypt)
+       10    0.000    0.000    0.000    0.000 paillier.py:73(e_add)
+       10    0.000    0.000    0.000    0.000 paillier.py:81(e_mul_const)
+       10    0.000    0.000    0.001    0.000 paillier.py:85(decrypt)
+     8106    0.063    0.000    0.487    0.000 primes.py:23(rabin_miller_witness)
+       41    0.000    0.000    0.000    0.000 primes.py:31(default_k)
+     1049    0.005    0.000    0.502    0.000 primes.py:34(is_probably_prime)
+   866365    0.424    0.000    0.424    0.000 primes.py:4(ipow)
+       41    0.001    0.000    0.504    0.012 primes.py:50(generate_prime)
+     9215    0.004    0.000    0.006    0.000 random.py:238(_randbelow_with_getrandbits)
+     9215    0.005    0.000    0.011    0.000 random.py:291(randrange)
+       60    0.000    0.000    0.000    0.000 random.py:335(randint)
+       10    0.000    0.000    0.002    0.000 timeit.py:101(__init__)
+       10    0.000    0.000    0.508    0.051 timeit.py:163(timeit)
+       10    0.000    0.000    0.510    0.051 timeit.py:230(timeit)
+       20    0.000    0.000    0.000    0.000 timeit.py:79(reindent)
+       30    0.001    0.000    0.001    0.000 {built-in method builtins.compile}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.globals}
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       41    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+       50    0.002    0.000    0.002    0.000 {built-in method builtins.pow}
+       21    0.000    0.000    0.000    0.000 {built-in method builtins.round}
+       10    0.000    0.000    0.000    0.000 {built-in method gc.disable}
+       10    0.000    0.000    0.000    0.000 {built-in method gc.enable}
+       10    0.000    0.000    0.000    0.000 {built-in method gc.isenabled}
+       21    0.000    0.000    0.000    0.000 {built-in method math.log}
+       20    0.000    0.000    0.000    0.000 {built-in method time.perf_counter}
+       10    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+     9215    0.001    0.000    0.001    0.000 {method 'bit_length' of 'int' objects}
+       10    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       10    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+    12569    0.001    0.000    0.001    0.000 {method 'getrandbits' of '_random.Random' objects}
+       20    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+
+
+Profiling Single Operation OT...
+Average time for Single Operation OT: 0.003069 seconds
+         95593 function calls in 0.032 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <timeit-src>:2(<module>)
+        1    0.000    0.000    0.003    0.003 <timeit-src>:2(inner)
+      120    0.000    0.000    0.003    0.000 AES.py:127(new)
+      120    0.000    0.000    0.001    0.000 AES.py:78(_create_base_cipher)
+       60    0.000    0.000    0.015    0.000 OT.py:11(SimplestOT_1OutOf2)
+       10    0.000    0.000    0.031    0.003 OT.py:227(VOLE)
+       60    0.000    0.000    0.000    0.000 Padding.py:39(pad)
+       60    0.000    0.000    0.000    0.000 Padding.py:67(unpad)
+       20    0.000    0.000    0.000    0.000 Profiling.py:13(setup)
+       10    0.000    0.000    0.031    0.003 Profiling.py:26(single_operation_OT)
+        6    0.000    0.000    0.000    0.000 __init__.py:384(__getattr__)
+        6    0.000    0.000    0.000    0.000 __init__.py:391(__getitem__)
+      120    0.000    0.000    0.000    0.000 __init__.py:48(create_string_buffer)
+      120    0.000    0.000    0.003    0.000 __init__.py:54(_create_cipher)
+       60    0.000    0.000    0.000    0.000 _mode_cbc.py:125(encrypt)
+       60    0.000    0.000    0.000    0.000 _mode_cbc.py:191(decrypt)
+      120    0.000    0.000    0.002    0.000 _mode_cbc.py:255(_create_cbc_cipher)
+      120    0.001    0.000    0.001    0.000 _mode_cbc.py:78(__init__)
+      120    0.000    0.000    0.000    0.000 _raw_api.py:195(get_raw_buffer)
+      480    0.000    0.000    0.001    0.000 _raw_api.py:229(c_uint8_ptr)
+      240    0.000    0.000    0.000    0.000 _raw_api.py:249(__init__)
+      240    0.000    0.000    0.000    0.000 _raw_api.py:252(get)
+      240    0.000    0.000    0.000    0.000 _raw_api.py:255(address_of)
+      240    0.000    0.000    0.000    0.000 _raw_api.py:258(VoidPointer)
+      240    0.000    0.000    0.000    0.000 _raw_api.py:267(__init__)
+      240    0.000    0.000    0.000    0.000 _raw_api.py:271(get)
+      120    0.000    0.000    0.000    0.000 _raw_api.py:274(release)
+      240    0.000    0.000    0.000    0.000 _raw_api.py:278(__del__)
+       20    0.000    0.000    0.000    0.000 classes.py:135(__init__)
+       20    0.000    0.000    0.000    0.000 classes.py:157(__init__)
+       60    0.000    0.000    0.000    0.000 classes.py:33(__init__)
+       60    0.000    0.000    0.000    0.000 classes.py:87(__init__)
+       20    0.000    0.000    0.000    0.000 helpers.py:11(reverse_binary_list)
+       10    0.000    0.000    0.000    0.000 helpers.py:149(int_to_bits)
+       10    0.000    0.000    0.000    0.000 helpers.py:168(<listcomp>)
+       60    0.000    0.000    0.000    0.000 helpers.py:173(generate_random_a_b)
+       60    0.000    0.000    0.000    0.000 helpers.py:191(calculate_public_keys)
+       60    0.000    0.000    0.000    0.000 helpers.py:221(derive_shared_keys)
+       60    0.000    0.000    0.004    0.000 helpers.py:248(process_encryption_decryption)
+       10    0.001    0.000    0.016    0.002 helpers.py:338(mock_decomposition)
+     1326    0.002    0.000    0.012    0.000 helpers.py:362(<listcomp>)
+     1326    0.002    0.000    0.002    0.000 helpers.py:364(<listcomp>)
+       10    0.000    0.000    0.000    0.000 helpers.py:374(VOLE_Reconstruction)
+      111    0.006    0.000    0.008    0.000 helpers.py:47(find_multiplicative_generator)
+      111    0.000    0.000    0.001    0.000 helpers.py:85(generate_prime_with_digits)
+      375    0.000    0.000    0.000    0.000 misc.py:491(as_int)
+      375    0.000    0.000    0.000    0.000 primetest.py:499(isprime)
+      120    0.000    0.000    0.000    0.000 py3compat.py:115(bchr)
+       60    0.000    0.000    0.000    0.000 py3compat.py:122(bord)
+      480    0.000    0.000    0.000    0.000 py3compat.py:137(byte_string)
+      120    0.000    0.000    0.000    0.000 py3compat.py:162(_copy_bytes)
+     8714    0.004    0.000    0.005    0.000 random.py:238(_randbelow_with_getrandbits)
+     8714    0.004    0.000    0.009    0.000 random.py:291(randrange)
+     8714    0.002    0.000    0.011    0.000 random.py:335(randint)
+       10    0.000    0.000    0.001    0.000 timeit.py:101(__init__)
+       10    0.000    0.000    0.031    0.003 timeit.py:163(timeit)
+       10    0.000    0.000    0.032    0.003 timeit.py:230(timeit)
+       20    0.000    0.000    0.000    0.000 timeit.py:79(reindent)
+      480    0.000    0.000    0.000    0.000 {built-in method _ctypes.byref}
+      180    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha256}
+      375    0.000    0.000    0.000    0.000 {built-in method _operator.index}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.bin}
+       30    0.001    0.000    0.001    0.000 {built-in method builtins.compile}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.globals}
+     1721    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+      990    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       60    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+    28381    0.002    0.000    0.002    0.000 {built-in method builtins.pow}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+     1326    0.000    0.000    0.000    0.000 {built-in method builtins.sum}
+       10    0.000    0.000    0.000    0.000 {built-in method gc.disable}
+       10    0.000    0.000    0.000    0.000 {built-in method gc.enable}
+       10    0.000    0.000    0.000    0.000 {built-in method gc.isenabled}
+      120    0.000    0.000    0.000    0.000 {built-in method sys.audit}
+       20    0.000    0.000    0.000    0.000 {built-in method time.perf_counter}
+      302    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       60    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+     8714    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+       60    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+      180    0.000    0.000    0.000    0.000 {method 'digest' of '_hashlib.HASH' objects}
+       10    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+      300    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+       10    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+      120    0.000    0.000    0.000    0.000 {method 'from_address' of '_ctypes.PyCArrayType' objects}
+    16812    0.001    0.000    0.001    0.000 {method 'getrandbits' of '_random.Random' objects}
+      600    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+       20    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+      120    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+
+
+Cumulative profiling information for all iterations:
+         1189146 function calls in 0.630 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      122    0.000    0.000    0.003    0.000 AES.py:127(new)
+      122    0.001    0.000    0.001    0.000 AES.py:78(_create_base_cipher)
+       61    0.000    0.000    0.020    0.000 OT.py:11(SimplestOT_1OutOf2)
+       10    0.000    0.000    0.036    0.004 OT.py:227(VOLE)
+       61    0.000    0.000    0.000    0.000 Padding.py:39(pad)
+       61    0.000    0.000    0.000    0.000 Padding.py:67(unpad)
+       30    0.000    0.000    0.000    0.000 Profiling.py:13(setup)
+       10    0.000    0.000    0.593    0.059 Profiling.py:21(single_operation_VOLE)
+       10    0.000    0.000    0.036    0.004 Profiling.py:26(single_operation_OT)
+       10    0.000    0.000    0.593    0.059 VOLE_Paillier.py:5(compute_vole_HE)
+      122    0.000    0.000    0.000    0.000 __init__.py:48(create_string_buffer)
+      122    0.000    0.000    0.003    0.000 __init__.py:54(_create_cipher)
+       61    0.000    0.000    0.000    0.000 _mode_cbc.py:125(encrypt)
+       61    0.000    0.000    0.000    0.000 _mode_cbc.py:191(decrypt)
+      122    0.000    0.000    0.003    0.000 _mode_cbc.py:255(_create_cbc_cipher)
+      122    0.001    0.000    0.001    0.000 _mode_cbc.py:78(__init__)
+      122    0.000    0.000    0.000    0.000 _raw_api.py:195(get_raw_buffer)
+      488    0.001    0.000    0.001    0.000 _raw_api.py:229(c_uint8_ptr)
+      244    0.000    0.000    0.000    0.000 _raw_api.py:249(__init__)
+      244    0.000    0.000    0.000    0.000 _raw_api.py:252(get)
+      244    0.000    0.000    0.000    0.000 _raw_api.py:255(address_of)
+      244    0.000    0.000    0.000    0.000 _raw_api.py:258(VoidPointer)
+      244    0.000    0.000    0.000    0.000 _raw_api.py:267(__init__)
+      244    0.000    0.000    0.000    0.000 _raw_api.py:271(get)
+      122    0.000    0.000    0.000    0.000 _raw_api.py:274(release)
+      244    0.000    0.000    0.000    0.000 _raw_api.py:278(__del__)
+       30    0.000    0.000    0.000    0.000 classes.py:135(__init__)
+       30    0.000    0.000    0.000    0.000 classes.py:157(__init__)
+       61    0.000    0.000    0.000    0.000 classes.py:33(__init__)
+       61    0.000    0.000    0.000    0.000 classes.py:87(__init__)
+       20    0.000    0.000    0.000    0.000 helpers.py:11(reverse_binary_list)
+       10    0.000    0.000    0.000    0.000 helpers.py:149(int_to_bits)
+       10    0.000    0.000    0.000    0.000 helpers.py:168(<listcomp>)
+       61    0.000    0.000    0.000    0.000 helpers.py:173(generate_random_a_b)
+       61    0.000    0.000    0.000    0.000 helpers.py:191(calculate_public_keys)
+       61    0.000    0.000    0.001    0.000 helpers.py:221(derive_shared_keys)
+       61    0.000    0.000    0.005    0.000 helpers.py:248(process_encryption_decryption)
+       10    0.001    0.000    0.016    0.002 helpers.py:338(mock_decomposition)
+     1317    0.002    0.000    0.012    0.000 helpers.py:362(<listcomp>)
+     1317    0.002    0.000    0.002    0.000 helpers.py:364(<listcomp>)
+       10    0.000    0.000    0.000    0.000 helpers.py:374(VOLE_Reconstruction)
+      132    0.009    0.000    0.012    0.000 helpers.py:47(find_multiplicative_generator)
+      132    0.000    0.000    0.002    0.000 helpers.py:85(generate_prime_with_digits)
+      418    0.000    0.000    0.000    0.000 misc.py:491(as_int)
+       10    0.000    0.000    0.000    0.000 paillier.py:22(modpow)
+       10    0.000    0.000    0.001    0.000 paillier.py:37(__init__)
+       10    0.001    0.000    0.001    0.000 paillier.py:4(invmod)
+       10    0.000    0.000    0.000    0.000 paillier.py:50(__init__)
+       10    0.000    0.000    0.083    0.008 paillier.py:58(generate_keypair)
+       20    0.000    0.000    0.510    0.025 paillier.py:64(encrypt)
+       10    0.000    0.000    0.000    0.000 paillier.py:73(e_add)
+       10    0.000    0.000    0.000    0.000 paillier.py:81(e_mul_const)
+       10    0.000    0.000    0.001    0.000 paillier.py:85(decrypt)
+     9301    0.069    0.000    0.568    0.000 primes.py:23(rabin_miller_witness)
+       45    0.000    0.000    0.000    0.000 primes.py:31(default_k)
+     1722    0.007    0.000    0.586    0.000 primes.py:34(is_probably_prime)
+  1020216    0.499    0.000    0.499    0.000 primes.py:4(ipow)
+       45    0.002    0.000    0.590    0.013 primes.py:50(generate_prime)
+      418    0.000    0.000    0.001    0.000 primetest.py:499(isprime)
+      122    0.000    0.000    0.000    0.000 py3compat.py:115(bchr)
+       61    0.000    0.000    0.000    0.000 py3compat.py:122(bord)
+      488    0.000    0.000    0.000    0.000 py3compat.py:137(byte_string)
+      122    0.000    0.000    0.000    0.000 py3compat.py:162(_copy_bytes)
+    19701    0.009    0.000    0.012    0.000 random.py:238(_randbelow_with_getrandbits)
+    19701    0.010    0.000    0.022    0.000 random.py:291(randrange)
+     8678    0.002    0.000    0.011    0.000 random.py:335(randint)
+      488    0.000    0.000    0.000    0.000 {built-in method _ctypes.byref}
+      183    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha256}
+      418    0.000    0.000    0.000    0.000 {built-in method _operator.index}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.bin}
+     1760    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+     1006    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       45    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+       71    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+    41864    0.005    0.000    0.005    0.000 {built-in method builtins.pow}
+       25    0.000    0.000    0.000    0.000 {built-in method builtins.round}
+     1317    0.000    0.000    0.000    0.000 {built-in method builtins.sum}
+       25    0.000    0.000    0.000    0.000 {built-in method math.log}
+      122    0.000    0.000    0.000    0.000 {built-in method sys.audit}
+      349    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       71    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+    19701    0.001    0.000    0.001    0.000 {method 'bit_length' of 'int' objects}
+       61    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+      183    0.000    0.000    0.000    0.000 {method 'digest' of '_hashlib.HASH' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+      305    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+      122    0.000    0.000    0.000    0.000 {method 'from_address' of '_ctypes.PyCArrayType' objects}
+    32218    0.003    0.000    0.003    0.000 {method 'getrandbits' of '_random.Random' objects}
+      610    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+      122    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+
+
